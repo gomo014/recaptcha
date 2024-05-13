@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>recaptcha</title>
+    <link rel="stylesheet" href="recaptcha.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="recaptcha">
+            <input type="checkbox" id="checkBox" disabled>
+            <label for="checkBox" class="labelforCheckBox">
+                <span class="boxCircle"></span>
+                <span class="box"></span>
+                <span class="check"></span>
+                <span class="textModal">私はロボットではありません。</span>
+                <span class="textModalError">試行回数が上限に達しました。もう一度<br>チェックボックスをオンにしてください。</span>
+                <img src="img/reCaptcha1.png" alt="reCaptcha" class="recaptcha__img1">
+                <img src="img/reCaptcha2.png" alt="reCaptcha" class="recaptcha__img2">
+                <span class="recaptcha__link">
+                    <a href="#">プライバシー</a> - <a href="#">利用規約</a>
+                </span>
+                <span class="modal">
+                    <span id="modal_text"></span>
+                    <div class="imgContainer">
+                        <div class="imgContainer1">
+                            <img id="01" src="img/question01/01.jpg" alt="01" />
+                            <img id="02" src="img/question01/02.jpg" alt="02" />
+                            <img id="03" src="img/question01/03.jpg" alt="03" />
+                            <img id="04" src="img/question01/04.jpg" alt="04" />
+                            <img id="05" src="img/question01/05.jpg" alt="05" />
+                            <img id="06" src="img/question01/06.jpg" alt="06" />
+                            <img id="07" src="img/question01/07.jpg" alt="07" />
+                            <img id="08" src="img/question01/08.jpg" alt="08" />
+                            <img id="09" src="img/question01/09.jpg" alt="09" />
+                        </div>
+                        <div class="imgContainer2">
+                            <img id="11" src="img/question02/01.jpg" alt="sec01" />
+                            <img id="12" src="img/question02/02.jpg" alt="sec02" />
+                            <img id="13" src="img/question02/03.jpg" alt="sec03" />
+                            <img id="14" src="img/question02/04.jpg" alt="sec04" />
+                            <img id="15" src="img/question02/05.jpg" alt="sec05" />
+                            <img id="16" src="img/question02/06.jpg" alt="sec06" />
+                            <img id="17" src="img/question02/07.jpg" alt="sec07" />
+                            <img id="18" src="img/question02/08.jpg" alt="sec08" />
+                            <img id="19" src="img/question02/09.jpg" alt="sec09" />
+                        </div>
+                    </div>
+                    <span class="errorMessage">もう一度お試しください。</span>
+                    <span class="errorNextQuestion">[確認]を押して次の質問を回答してください</span>
+                    <span class="border"></span>
+                    <input type="checkbox" id="confirmButton">
+                    <label for="confirmButton" id="labelforConfirmButton">確認</label>
+                </span>
+            </label>
+            <img id="popperLeft" loop="false" src="gif/popper.gif" alt="popperLeft">
+            <img id="popperRight" loop="false" src="gif/popper.gif" alt="popperRight">
+        </div>
+
+        <div class="redDot"></div>
+    </div>
+    <script src="data.js"></script>
+    <script src="recaptcha.js"></script>
+
+</body>
+</html>
